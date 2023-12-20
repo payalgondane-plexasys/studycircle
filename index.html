@@ -96,6 +96,8 @@
         }
         .deals{
             padding: 20px;
+        }
+        .deals-slider{
             background: linear-gradient(180deg, #FAF7F0 0%, #FAF7F0 100%);
         }
         .deals h2 {
@@ -108,13 +110,80 @@
         }
 
     
-        .deals .swiper-wrapper {
+        .deals-slider .swiper-wrapper {
             transform: translate3d(0px,0,0);
             padding: 10px 10px;
             margin-bottom: 10px;
         }
-        
-      
+        .card-image{
+            background: #ccc;
+        }
+        .service-box-1 {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .content-body {
+            padding: 10px;
+            background: #737373;
+            color: #fff;
+        }
+        .content-body .icon-link, span {
+            color: #fff;
+            text-decoration: none;
+            font-size: .85rem;
+        }
+        .swiper.mySwiperVertical.swiper-initialized.swiper-vertical.swiper-backface-hidden {
+            height: 500px;
+        }
+        .box {
+            margin: 10px;
+            }
+
+            .box1 {
+            margin-top: -20px; /* Adjust the negative margin to lift the first box */
+            }
+            .filter-box__list {
+                max-height: 350px;
+                overflow: auto;
+                padding: 40px 0 0;                
+            }
+
+            .box .service-box-1 .content-body {
+                background: #fff;
+                color: #1D1D1D;
+            }
+            .box .service-box-1 .content-body .icon-link, span {
+                color: #1D1D1D;
+            }
+            .box .service-box-1 {
+                box-shadow: 0px 6px 10px 3px #00000026;
+            }
+
+
+            ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+            }
+
+            ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+            }
+
+            ::-webkit-scrollbar-thumb:window-inactive {
+            background: rgba(255, 255, 255, 0.3);
+            }
+
+
+
     </style>
   </head>
   <body>
@@ -167,9 +236,8 @@
                     </div>
                 </div>
 
-                <div class="deals">
-                    
-                    <div class="hstack gap-3">
+                <div class="deals-slider">                    
+                    <div class="deals hstack gap-3">
                         <div> <h2>Limited Deals</h2></div>
                         <div class="ms-auto">
                             <a href="Javascript(0);" class="d-inline-block w-75 float-end">
@@ -181,14 +249,16 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="card service-box-1">
-                                    <img src="assets/images/img/book2.png"  class="img-fluid card-img-top"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Card title</h6>                                       
-                                        <div class="hstack gap-3">
+                                <div class="service-box-1">
+                                    <div class="card-image">
+                                        <img src="assets/images/img/book2.png" class="img-fluid">
+                                    </div>                                   
+                                    <div class="content-body">
+                                        <h6>You Can</h6>                                       
+                                        <div class="hstack gap-3 mt-2">
                                             <a class="icon-link" href="#">
-                                                Icon link
-                                                <i class='bx bxs-chevrons-right'></i>
+                                                See More
+                                                <i class="bx bxs-chevrons-right"></i>
                                             </a>
                                             <div class="ms-auto">
                                                 <span> $ 20.22 </span>
@@ -198,14 +268,16 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="card service-box-1">
-                                    <img src="assets/images/img/book2.png"  class="img-fluid card-img-top"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Card title</h6>                                       
-                                        <div class="hstack gap-3">
+                                <div class="service-box-1">
+                                    <div class="card-image">
+                                        <img src="assets/images/img/book2.png" class="img-fluid">
+                                    </div>                                   
+                                    <div class="content-body">
+                                        <h6>You Can</h6>                                       
+                                        <div class="hstack gap-3 mt-2">
                                             <a class="icon-link" href="#">
-                                                Icon link
-                                                <i class='bx bxs-chevrons-right'></i>
+                                                See More
+                                                <i class="bx bxs-chevrons-right"></i>
                                             </a>
                                             <div class="ms-auto">
                                                 <span> $ 20.22 </span>
@@ -215,14 +287,16 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="card service-box-1">
-                                    <img src="assets/images/img/book2.png"  class="img-fluid card-img-top"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Card title</h6>                                       
-                                        <div class="hstack gap-3">
+                                <div class="service-box-1">
+                                    <div class="card-image">
+                                        <img src="assets/images/img/book2.png" class="img-fluid">
+                                    </div>                                   
+                                    <div class="content-body">
+                                        <h6>You Can</h6>                                       
+                                        <div class="hstack gap-3 mt-2">
                                             <a class="icon-link" href="#">
-                                                Icon link
-                                                <i class='bx bxs-chevrons-right'></i>
+                                                See More
+                                                <i class="bx bxs-chevrons-right"></i>
                                             </a>
                                             <div class="ms-auto">
                                                 <span> $ 20.22 </span>
@@ -230,17 +304,105 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                           
+                            </div>                           
                         </div>
-
-
                         <div class="swiper-scrollbar"></div>
                     </div>
+                </div>
 
-
-
-
+                <div class="vertical-slider">
+                    <div class="deals hstack gap-3 bg-light">
+                        <div> <h2>Limited Deals</h2></div>
+                        <div class="ms-auto">
+                            <a href="Javascript(0);" class="d-inline-block w-75 float-end">
+                                <img src="assets/images/icons/arrow.png"  class="img-fluid"/>
+                            </a>
+                        </div>
+                    </div>
+                     <!-- Swiper -->
+                     <div class="filter-box__list">
+                        <div class="d-flex">
+                            <div class="col box box1">
+                                 <div class="service-box-1">
+                                    <div class="card-image">
+                                        <img src="assets/images/img/book2.png" class="img-fluid">
+                                    </div>                                   
+                                    <div class="content-body">
+                                        <h6>You Can</h6>                                       
+                                        <div class="hstack gap-3 mt-2">
+                                            <a class="icon-link" href="#">
+                                                See More
+                                                <i class="bx bxs-chevrons-right"></i>
+                                            </a>
+                                            <div class="ms-auto">
+                                                <span> $ 20.22 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col box">
+                                 <div class="service-box-1">
+                                    <div class="card-image">
+                                        <img src="assets/images/img/book2.png" class="img-fluid">
+                                    </div>                                   
+                                    <div class="content-body">
+                                        <h6>You Can</h6>                                       
+                                        <div class="hstack gap-3 mt-2">
+                                            <a class="icon-link" href="#">
+                                                See More
+                                                <i class="bx bxs-chevrons-right"></i>
+                                            </a>
+                                            <div class="ms-auto">
+                                                <span> $ 20.22 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col box box1">
+                                 <div class="service-box-1">
+                                    <div class="card-image">
+                                        <img src="assets/images/img/book2.png" class="img-fluid">
+                                    </div>                                   
+                                    <div class="content-body">
+                                        <h6>You Can</h6>                                       
+                                        <div class="hstack gap-3 mt-2">
+                                            <a class="icon-link" href="#">
+                                                See More
+                                                <i class="bx bxs-chevrons-right"></i>
+                                            </a>
+                                            <div class="ms-auto">
+                                                <span> $ 20.22 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col box">
+                                 <div class="service-box-1">
+                                    <div class="card-image">
+                                        <img src="assets/images/img/book2.png" class="img-fluid">
+                                    </div>                                   
+                                    <div class="content-body">
+                                        <h6>You Can</h6>                                       
+                                        <div class="hstack gap-3 mt-2">
+                                            <a class="icon-link" href="#">
+                                                See More
+                                                <i class="bx bxs-chevrons-right"></i>
+                                            </a>
+                                            <div class="ms-auto">
+                                                <span> $ 20.22 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
               
 
